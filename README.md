@@ -1,6 +1,6 @@
 # collegemap
 
-Sinatra app that renders a College Football FCS Team Google Map of where ther players are from.
+Sinatra app that renders a College Football FCS Team Google Map of where their players are from.
 
 Unfortuantly, it only works for the following 21 teams.
 
@@ -9,8 +9,8 @@ Leaerning Sinatra through creating a basic NCAA sports app.  Super basic.
 
 Has two intents.
 
-1:  render a google map in the browser showing a NCAA teams players' locations
-2:  an api call that returns the html/javascript code that renders the map for third party consumption (not finished yet)
+1.  render a google map in the browser showing a NCAA teams players' locations
+2.  an api call that returns the html/javascript code that renders the map for third party consumption (not finished yet)
 
 ## Installation
 
