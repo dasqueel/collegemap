@@ -1,0 +1,49 @@
+<style>
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<%= include_gon %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 5,
+      //center the map on MERICA
+      center: {lat: 41.850033, lng: -87.6500523}
+    });
+
+    setMarkers(map);
+  }
+
+  //grab the players from sinatra code
+  var players = gon.players;
+
+  //iterate through players, and create a marker for them
+  function setMarkers(map) {
+    $.each(gon.players, function( index, value ) {
+      var marker = new google.maps.Marker({
+        position: {lat: value["lat"], lng: value["lng"]},
+        map: map
+        //icon: image,
+        //shape: shape
+      });
+    });
+  }
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZsum5_AWHP0PhLj_N6SkZ1X0JHPiaWQo&callback=initMap">
+</script>
