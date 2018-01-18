@@ -26,9 +26,9 @@ change into the collegemap directory
 cd collegemap
 ```
 
-I have not figured out how bundler works quite yet, will update soon.
+Install gem dependencies
 ```
-
+bunlde install
 ```
 
 ## Usage
