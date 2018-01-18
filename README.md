@@ -2,7 +2,7 @@
 
 Sinatra app that renders a College Football FCS Team Google Map of where their players are from.
 
-I signed up for a Free Trial SportRadar account and made an api call and wrote the results in a json file.
+The player data is from signing up for a Free Trial SportRadar account and made an api call and wrote the results in a json file.
 
 Unfortuantly, not all teams work, however they should in the next few days.
 
